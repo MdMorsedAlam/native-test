@@ -5,6 +5,7 @@ export default function Layout() {
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
       <Drawer>
+    
         <Drawer.Screen
           name="index" // This is the name of the page and must match the url from root
           options={{
@@ -27,6 +28,15 @@ export default function Layout() {
             drawerLabel: 'Login',
             title: 'Login',
             headerTintColor:"red",
+          }}
+        />
+          <Drawer.Screen
+          name="flat-list" // This is the name of the page and must match the url from root
+          options={{
+            drawerLabel: 'Flat-List',
+            title: 'Flat-List',
+            headerTintColor:"green",
+            headerShown:false,
           }}
         />
       </Drawer>
