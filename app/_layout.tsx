@@ -39,6 +39,15 @@ export default function Layout() {
             headerShown:false,
           }}
         />
+            <Drawer.Screen
+          name="modal" // This is the name of the page and must match the url from root
+          options={{
+            drawerLabel: 'Modal',
+            title: 'Modal',
+            headerTintColor:"green",
+            headerShown:false,
+          }}
+        />
       </Drawer>
     </GestureHandlerRootView>
   );
