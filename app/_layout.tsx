@@ -48,6 +48,15 @@ export default function Layout() {
             headerShown:false,
           }}
         />
+             <Drawer.Screen
+          name="test" // This is the name of the page and must match the url from root
+          options={{
+            drawerLabel: 'Test',
+            title: 'Test',
+            headerTintColor:"orange",
+            headerShown:false,
+          }}
+        />
       </Drawer>
     </GestureHandlerRootView>
   );

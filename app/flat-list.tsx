@@ -1,11 +1,12 @@
 import { Image, StyleSheet, Text, View, FlatList } from 'react-native';
 import React from 'react';
+import { Link } from 'expo-router';
 
 export default function FlatListPage() {
     return (
         <View style={styles.container}>
             <View style={styles.header}>
-                <Text style={styles.title}>Leader Board</Text>
+                <Text style={styles.title}><Link href={"/"}>Leader Board</Link></Text>
                 <View style={styles.leaderRow}>
                     {["Maruf", "Sabbir", "Morsed"].map((item, index) => (
                         <View key={index} style={[styles.leaderBox, index !== 1 && { marginTop: 40 }]}>
