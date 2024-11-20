@@ -24,7 +24,7 @@ export default function FlatListPage() {
             </View>
             <View style={styles.body}>
                 <FlatList
-                    data={[1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 0, 9, 8, 7, 6, 5, 4, 3, 2, 1]}
+                    data={[1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 0, 9, 8, 7, 6, 5, 4, 3, 2, 1,2]}
                     renderItem={({ item, index }) => (
                         <View style={styles.itemContainer}>
                             <View style={{ flexDirection: "row", gap: 10, justifyContent: "center", alignItems: "center" }}>
